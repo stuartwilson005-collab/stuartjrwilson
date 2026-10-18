@@ -39,4 +39,25 @@ a:focus-visible{outline-color:#087c76}
 <section class="section"><div class="section-head"><div class="label">04 / What changed</div><div><h2>Less time pulling information together. More time acting on it.</h2><p>Instead of working through every section of a detailed plan and writing updates manually, the CSM reviewed the latest tagged notes. These could reflect changes in usage, approaching renewals, new champions or developing risks.</p><div class="comparison"><div class="card"><strong>Before: manual reconstruction</strong><ul><li>Review account correspondence and usage context</li><li>Work through multiple planning sections</li><li>Identify changes and refresh notes individually</li></ul></div><div class="card"><strong>After: AI-assisted updates</strong><ul><li>AI reviews recent account information</li><li>AI adds appropriately tagged notes that appear in the account-plan views</li><li>CSM reviews and corrects the notes before acting on them</li></ul></div></div><div class="callout"><strong>The CSM remained accountable.</strong>Custify showed the latest note for each tag rather than holding changes in a separate approval area. The CSM remained responsible for checking the information, editing a note or adding a new one if needed and deciding what action to take.</div></div></div></section>
 <section class="section"><div class="section-head"><div class="label">05 / The outcome</div><div><h2>Less admin. More time with customers.</h2><p>AI took on much of the recurring work of reviewing account information and creating updated notes. CSMs still checked accuracy and made the final judgement, but spent less time on account maintenance and had more time to speak to customers, understand their needs and help them get value from the product.</p></div></div></section>
 </main><footer class="bottom"><div class="wrap"><div><strong>Stuart Wilson</strong><p>Strategic Customer Success · Technical B2B SaaS and API platforms</p></div><small>Professional case study · AI-assisted account planning</small></div></footer>
+<!-- Cloudflare Web Analytics: personal browser opt-out via ?analytics=off; re-enable via ?analytics=on. -->
+<script>
+(function () {
+  const key = 'stuart-cs-analytics-opt-out';
+  const params = new URLSearchParams(window.location.search);
+  const choice = params.get('analytics');
+  try {
+    if (choice === 'off') localStorage.setItem(key, '1');
+    if (choice === 'on') localStorage.removeItem(key);
+  } catch (error) { /* Storage may be unavailable in private browsing. */ }
+  if (choice === 'off') return;
+  let optedOut = false;
+  try { optedOut = localStorage.getItem(key) === '1'; } catch (error) {}
+  if (optedOut) return;
+  const beacon = document.createElement('script');
+  beacon.type = 'module';
+  beacon.src = 'https://static.cloudflareinsights.com/beacon.min.js';
+  beacon.setAttribute('data-cf-beacon', JSON.stringify({ token: 'd771156b307c47318e2d12b2369e3d47' }));
+  document.body.appendChild(beacon);
+})();
+</script><!-- End Cloudflare Web Analytics -->
 </body></html>
