@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Stuart Wilson — professional profile, experience and selected projects.">
+  <meta name="theme-color" content="#14283c">
+  <title>Stuart Wilson | Professional Profile</title>
+  <style>
+    :root{color-scheme:light;--navy:#14283c;--ink:#1e3447;--muted:#607284;--accent:#147d80;--paper:#f7f9f8;--border:#dce5e9}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.65 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+    a{color:inherit}a:focus-visible{outline:3px solid #e8b75e;outline-offset:4px}
+    .wrap{width:min(1080px,calc(100% - 48px));margin-inline:auto}
+    .top{background:var(--navy);color:#fff}.nav{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:24px 0;border-bottom:1px solid #ffffff26}.brand{font-weight:700;letter-spacing:.02em}.nav a{color:#d5e8eb;text-decoration:none;font-size:14px}.nav a:hover{text-decoration:underline}
+    .hero{padding:105px 0 112px;max-width:850px}.eyebrow{font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:750;color:#8cd0cc}.hero h1{font-size:clamp(52px,8vw,90px);letter-spacing:-.055em;line-height:1.02;margin:20px 0 24px;font-weight:720}.hero p{max-width:690px;font-size:clamp(19px,2.3vw,23px);line-height:1.55;color:#dce7ec;margin:0}
+    .main{padding:72px 0 100px}.section-top{display:flex;justify-content:space-between;gap:25px;align-items:baseline;margin-bottom:25px}.section-top h2{margin:0;font-size:30px;letter-spacing:-.035em}.section-top p{margin:0;color:var(--muted);font-size:14px}
+    .cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}.card{display:flex;flex-direction:column;min-height:275px;padding:32px;background:white;border:1px solid var(--border);border-radius:14px;text-decoration:none;box-shadow:0 9px 28px #14283c08;transition:transform .2s ease,border-color .2s ease,box-shadow .2s ease}.card:hover{transform:translateY(-3px);border-color:#83b8b5;box-shadow:0 15px 32px #14283c12}.card .number{font-size:12px;letter-spacing:.15em;color:var(--accent);font-weight:800}.card h3{font-size:25px;line-height:1.25;letter-spacing:-.025em;margin:25px 0 12px}.card p{margin:0;color:var(--muted);max-width:390px}.card .more{margin-top:auto;padding-top:25px;font-weight:700;color:#096b70;font-size:14px}
+    .note{margin-top:45px;color:var(--muted);font-size:14px}.note a{color:#096b70;text-underline-offset:3px}
+    footer{background:var(--navy);color:#cddce5;padding:28px 0}footer .wrap{display:flex;justify-content:space-between;gap:16px;align-items:center}footer small{font-size:13px}footer a{color:#b2e3df;text-decoration:none}footer a:hover{text-decoration:underline}
+    @media(max-width:700px){.wrap{width:min(100% - 36px,1080px)}.hero{padding:80px 0 85px}.main{padding:55px 0 75px}.section-top{display:block}.section-top p{margin-top:8px}.cards{grid-template-columns:1fr}.card{min-height:250px;padding:27px}footer .wrap{display:block}footer small{display:block;margin-top:8px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.card{transition:none}}
+  </style>
+</head>
+<body>
+  <header class="top">
+    <div class="wrap">
+      <nav class="nav" aria-label="Main navigation"><span class="brand">Stuart Wilson</span><a href="#explore">Explore my work ↓</a></nav>
+      <div class="hero">
+        <div class="eyebrow">Professional profile &amp; selected work</div>
+        <h1>Stuart Wilson.</h1>
+        <p>Welcome. This is a place to explore my professional background, experience and a selection of projects and ideas.</p>
+      </div>
+    </div>
+  </header>
+  <main class="wrap main" id="explore">
+    <div class="section-top"><h2>Explore</h2><p>Experience, thinking and practical work</p></div>
+    <div class="cards">
+      <a class="card" href="/cs/" aria-label="View Customer Success profile"><span class="number">01 / PROFILE</span><h3>Customer Success</h3><p>My experience and approach to customer relationships, leadership and long-term commercial value.</p><span class="more">View profile →</span></a>
+      <a class="card" href="/ai-account-planning/" aria-label="View AI-assisted Account Planning case study"><span class="number">02 / CASE STUDY</span><h3>AI-assisted Account Planning</h3><p>A practical example of using AI and structured customer information to make account planning more efficient.</p><span class="more">Explore case study →</span></a>
+    </div>
+    <p class="note">This site is a growing collection of professional experience and selected work.</p>
+  </main>
+  <footer><div class="wrap"><strong>Stuart Wilson</strong><small>© <span id="year">2026</span> Stuart Wilson · <a href="/cs/">Professional profile</a></small></div></footer>
+  <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>
