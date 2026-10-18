@@ -42,5 +42,26 @@
   </main>
   <footer><div class="wrap"><strong>Stuart Wilson</strong><small>© <span id="year">2026</span> Stuart Wilson · <a href="/cs/">Professional profile</a></small></div></footer>
   <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+<!-- Cloudflare Web Analytics: personal browser opt-out via ?analytics=off; re-enable via ?analytics=on. -->
+<script>
+(function () {
+  const key = 'stuart-cs-analytics-opt-out';
+  const params = new URLSearchParams(window.location.search);
+  const choice = params.get('analytics');
+  try {
+    if (choice === 'off') localStorage.setItem(key, '1');
+    if (choice === 'on') localStorage.removeItem(key);
+  } catch (error) { /* Storage may be unavailable in private browsing. */ }
+  if (choice === 'off') return;
+  let optedOut = false;
+  try { optedOut = localStorage.getItem(key) === '1'; } catch (error) {}
+  if (optedOut) return;
+  const beacon = document.createElement('script');
+  beacon.type = 'module';
+  beacon.src = 'https://static.cloudflareinsights.com/beacon.min.js';
+  beacon.setAttribute('data-cf-beacon', JSON.stringify({ token: 'd771156b307c47318e2d12b2369e3d47' }));
+  document.body.appendChild(beacon);
+})();
+</script><!-- End Cloudflare Web Analytics -->
 </body>
 </html>
