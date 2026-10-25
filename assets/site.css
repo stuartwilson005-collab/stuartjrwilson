@@ -1,0 +1,25 @@
+/* Shared chrome uses site-* classes so page-specific styles stay independent. */
+.site-container{width:min(1080px,calc(100% - 48px));margin-inline:auto}
+.site-header{background:#213f56;color:#f8fbfd;border:0}
+.site-header .site-nav{display:flex;flex-direction:row;align-items:center;justify-content:space-between;gap:24px;padding:22px 0;border-bottom:1px solid #ffffff26}
+.site-header .site-brand,.site-footer .site-brand{display:block;color:#fff;font:750 18px/1.4 system-ui,-apple-system,"Segoe UI",sans-serif;letter-spacing:.02em;text-decoration:none}
+.site-brand span{display:block;color:#d5e3eb;font-size:12px;font-weight:400;letter-spacing:0;margin-top:4px}
+.site-header .site-links,.site-footer .site-links{display:flex;flex-direction:row;flex-wrap:wrap;align-items:center;justify-content:flex-start;gap:8px 22px;padding:0;border:0}
+.site-header .site-links a,.site-footer .site-links a{padding:6px 0;color:#e0eaf0;font:500 14px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif;text-decoration:none;text-underline-offset:6px}
+.site-links a[aria-current="page"]{text-decoration:underline;text-decoration-thickness:2px;text-decoration-color:#6ce0c4}
+.site-header a:hover,.site-footer a:hover{color:#fff;text-decoration:underline}
+.site-footer{padding:36px 0 24px;background:#102638;color:#d5e3eb;font:14px/1.65 system-ui,-apple-system,"Segoe UI",sans-serif}
+.site-footer-top,.site-footer-bottom{display:flex;justify-content:space-between;gap:24px;align-items:center}
+.site-footer-top{padding-bottom:24px}
+.site-footer p{margin:8px 0 0;max-width:340px;color:#d5e3eb}
+.site-footer-bottom{border-top:1px solid #476276;padding-top:20px}
+.site-footer small{display:inline;margin:0;font-size:13px}
+.site-contact{display:flex;flex-wrap:wrap;gap:8px 22px}
+.site-footer .site-contact a{color:#b2e3df;text-decoration:none;overflow-wrap:anywhere}
+.site-header a:focus-visible,.site-footer a:focus-visible,.skip-link:focus-visible{outline:3px solid #f0b75c;outline-offset:4px}
+.skip-link{position:absolute;top:8px;left:16px;transform:translateY(-180%);z-index:10;background:#fff;color:#182a3a;padding:10px 16px;border-radius:4px}
+.skip-link:focus{transform:translateY(0)}
+#main-content{scroll-margin-top:16px}
+@media(max-width:850px){.site-header .site-nav{align-items:flex-start;flex-direction:column;gap:14px}.site-footer-top{align-items:flex-start;flex-direction:column}}
+@media(max-width:600px){.site-container{width:calc(100% - 36px)}.site-footer-bottom{align-items:flex-start;flex-direction:column;gap:12px}.site-header .site-links,.site-footer .site-links{gap:6px 18px}.site-brand span{font-size:11px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto!important}*,*::before,*::after{transition:none!important}}

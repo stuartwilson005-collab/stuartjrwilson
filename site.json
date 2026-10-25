@@ -1,0 +1,29 @@
+{
+  "url": "https://stuartjrwilson.com",
+  "name": "Stuart Wilson",
+  "email": "stuart@stuartjrwilson.com",
+  "linkedin": "https://www.linkedin.com/in/stuartwilson005",
+  "pages": [
+    {
+      "path": "/",
+      "label": "Home",
+      "title": "Stuart Wilson | Customer Success & Selected Work",
+      "description": "Explore Stuart Wilson's Customer Success experience, approach to customer relationships and commercial growth, and practical AI-assisted account planning work.",
+      "schema_type": "WebPage"
+    },
+    {
+      "path": "/cs/",
+      "label": "Customer Success",
+      "title": "Customer Success & Commercial Growth | Stuart Wilson",
+      "description": "Discover Stuart Wilson's experience in Customer Success, strategic partnerships, customer retention and commercial growth across B2B SaaS and enterprise software.",
+      "schema_type": "ProfilePage"
+    },
+    {
+      "path": "/ai-account-planning/",
+      "label": "AI Account Planning",
+      "title": "AI-Assisted Account Planning Case Study | Stuart Wilson",
+      "description": "How Stuart Wilson used Custify and AI-assisted tagged notes to reduce account planning admin at Solidatus, while keeping Customer Success managers accountable.",
+      "schema_type": "WebPage"
+    }
+  ]
+}
